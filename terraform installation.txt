@@ -15,7 +15,7 @@ access_key = ""
 secret_key = ""
 }
 resource "aws_instance" "hai"{
-ami = "ami-02b49a24cfb95941c"
+ami = ""
 instance_type = "t2.micro"
 count = 2
 tags = {
