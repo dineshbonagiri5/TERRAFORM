@@ -1,0 +1,31 @@
+Terraform:
+
+STEP1 : sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+STEP2 : sudo yum -y install terraform
+STEP3 : terraform — version
+
+
+=========
+
+INSTANCE SCRIPT FOR TERRAFORM:
+
+provider "aws"{
+region = "ap-south-1"
+access_key = ""
+secret_key = ""
+}
+resource "aws_instance" "hai"{
+ami = "ami-02b49a24cfb95941c"
+instance_type = "t2.micro"
+count = 2
+tags = {
+Name = "dinesh_ins"
+}
+}
+
+=======
+
+step5:terraform init
+step6:terraform validate
+step7:terraform apply (FILE NAME)
+we can destroy instances commanda:terraform destroy
