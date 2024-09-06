@@ -25,7 +25,7 @@ Name = "dinesh_ins"
 
 =======
 
-step5:terraform init
-step6:terraform validate
-step7:terraform apply (FILE NAME)
+step4:terraform init
+step5:terraform validate
+step6:terraform apply (FILE NAME)
 we can destroy instances commanda:terraform destroy
